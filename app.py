@@ -10,7 +10,7 @@ except (keyError, FileNotFoundError):
   st.stop()
 name=st.text_area("Student Name","Enter Your Name")
 usn=st.text_area("USN / Roll no.","Enter your USN")
-dept=st.selectbox("Department",["CSE',"ISE","AI&DS","AI&ML","CIVIL","MECHANICAL","CYBER"])
+dept=st.selectbox("Department",["CSE","ISE","AI&DS","AI&ML","CIVIL","MECHANICAL","CYBER"])
 year=st.radio("Current Year",["1st year","2nd Year","3rd Year","4th Year"])
 btn=st.button("View My Profile")
 if btn:
