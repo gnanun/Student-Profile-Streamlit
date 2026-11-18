@@ -1,6 +1,6 @@
 import streamlit as st
 from groq import Groq
-st.set_page_config(page_title="Gnanesh N",page_icon="🥰", layout="centered")
+st.set_page_config(page_title="Gnanesh N",page_icon="🎓", layout="centered")
 st.title("🎓 Student Profile Application")
 st.caption("Developed by: Gnanesh N")
 try:
@@ -10,7 +10,7 @@ except (keyError, FileNotFoundError):
   st.stop()
 name=st.text_area("Student Name","Enter Your Name")
 usn=st.text_area("USN / Roll no.","Enter your USN")
-dept=st.text_area("Department","Enter Your Department")
+dept=st.selectbox("Department",["CSE',"ISE","AI&DS","AI&ML","CIVIL","MECHANICAL","CYBER"])
 year=st.radio("Current Year",["1st year","2nd Year","3rd Year","4th Year"])
 btn=st.button("View My Profile")
 if btn:
